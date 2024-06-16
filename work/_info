@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/repos/video_aulas_vhdl/0044_vhdl_packages
+Euart_tx
+Z0 w1718557519
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/repos/uart_vhdl
+Z5 8D:/repos/uart_vhdl/uart_tx.vhd
+Z6 FD:/repos/uart_vhdl/uart_tx.vhd
+l0
+L5
+VTHbO>[7HTHI39ahZdJJeF2
+!s100 :[Y<=]=4PIbni6g[4H>aO2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1718557557
+!i10b 1
+Z9 !s108 1718557557.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx.vhd|
+Z11 !s107 D:/repos/uart_vhdl/uart_tx.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 7 uart_tx 0 22 THbO>[7HTHI39ahZdJJeF2
+l24
+L19
+VknnZ]z6Wj0a<E>GGglhL92
+!s100 5DzY`?Q:d?@EUJ5VBSnW22
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Euart_tx_tb
+Z15 w1718557189
+R1
+R2
+R3
+R4
+Z16 8D:/repos/uart_vhdl/uart_tx_tb.vhd
+Z17 FD:/repos/uart_vhdl/uart_tx_tb.vhd
+l0
+L5
+Vi:ASNjH_8CLcz6ln9V:Y?2
+!s100 XlVRC^TZU8CiSflZ:RlzW2
+R7
+32
+Z18 !s110 1718557193
+!i10b 1
+Z19 !s108 1718557193.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx_tb.vhd|
+Z21 !s107 D:/repos/uart_vhdl/uart_tx_tb.vhd|
+!i113 1
+R12
+R13
+Asimulation
+R14
+R1
+R2
+R3
+DEx4 work 10 uart_tx_tb 0 22 i:ASNjH_8CLcz6ln9V:Y?2
+l16
+L9
+VG_m`RF_e@[72RDi=i0Ljh3
+!s100 N[Z6PAdKm=Tk=aYSX5aYH1
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
