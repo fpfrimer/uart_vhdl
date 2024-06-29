@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Sun Jun 16 17:34:32 2024
+Sun Jun 16 18:03:40 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,13 +13,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |uart_tx
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |uart_tx
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +46,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 16 17:34:32 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 16 18:03:40 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; uart                                        ;
 ; Top-level Entity Name              ; uart_tx                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 42                                          ;
-;     Total combinational functions  ; 42                                          ;
-;     Dedicated logic registers      ; 31                                          ;
-; Total registers                    ; 31                                          ;
+; Total logic elements               ; 38                                          ;
+;     Total combinational functions  ; 38                                          ;
+;     Dedicated logic registers      ; 30                                          ;
+; Total registers                    ; 30                                          ;
 ; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -155,7 +156,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
+; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -172,7 +173,7 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path   ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------+---------+
-; uart_tx.vhd                      ; yes             ; User VHDL File  ; D:/repos/uart_vhdl/uart_tx.vhd ;         ;
+; uart_tx.vhd                      ; yes             ; User VHDL File  ; D:/Repos/uart_vhdl/uart_tx.vhd ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------+---------+
 
 
@@ -181,20 +182,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 42        ;
+; Estimated Total logic elements              ; 38        ;
 ;                                             ;           ;
-; Total combinational functions               ; 42        ;
+; Total combinational functions               ; 38        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 10        ;
-;     -- 3 input functions                    ; 11        ;
-;     -- <=2 input functions                  ; 21        ;
+;     -- 4 input functions                    ; 11        ;
+;     -- 3 input functions                    ; 12        ;
+;     -- <=2 input functions                  ; 15        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 30        ;
+;     -- normal mode                          ; 26        ;
 ;     -- arithmetic mode                      ; 12        ;
 ;                                             ;           ;
-; Total registers                             ; 31        ;
-;     -- Dedicated logic registers            ; 31        ;
+; Total registers                             ; 30        ;
+;     -- Dedicated logic registers            ; 30        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 13        ;
@@ -202,9 +203,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 31        ;
-; Total fan-out                               ; 236       ;
-; Average fan-out                             ; 2.38      ;
+; Maximum fan-out                             ; 30        ;
+; Total fan-out                               ; 238       ;
+; Average fan-out                             ; 2.53      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,9 +214,19 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |uart_tx                   ; 42 (42)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |uart_tx            ; uart_tx     ; work         ;
+; |uart_tx                   ; 38 (38)             ; 30 (30)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |uart_tx            ; uart_tx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; shift_register[9]                     ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -223,12 +234,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 2     ;
-; Number of registers using Asynchronous Clear ; 31    ;
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 13    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 30    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 13    ;
+; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -239,7 +250,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
 ; tx~reg0                                 ; 1       ;
-; shift_register[0]                       ; 1       ;
+; shift_register[0]                       ; 2       ;
 ; shift_register[1]                       ; 1       ;
 ; shift_register[2]                       ; 1       ;
 ; shift_register[3]                       ; 1       ;
@@ -248,8 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; shift_register[6]                       ; 1       ;
 ; shift_register[7]                       ; 1       ;
 ; shift_register[8]                       ; 1       ;
-; shift_register[9]                       ; 2       ;
-; Total number of inverted registers = 11 ;         ;
+; Total number of inverted registers = 10 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -258,7 +268,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |uart_tx|tx~reg0           ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |uart_tx|shift_register[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
@@ -280,21 +289,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 31                          ;
-;     CLR               ; 16                          ;
-;     CLR SLD           ; 2                           ;
-;     ENA CLR           ; 13                          ;
-; cycloneiii_lcell_comb ; 43                          ;
+; cycloneiii_ff         ; 30                          ;
+;     CLR               ; 5                           ;
+;     CLR SCLR          ; 13                          ;
+;     ENA CLR           ; 12                          ;
+; cycloneiii_lcell_comb ; 39                          ;
 ;     arith             ; 12                          ;
-;         2 data inputs ; 12                          ;
-;     normal            ; 31                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 27                          ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 7                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 11                          ;
-;         4 data inputs ; 10                          ;
+;         4 data inputs ; 11                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 1.97                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -313,30 +323,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 16 17:34:22 2024
+    Info: Processing started: Sun Jun 16 18:03:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
-Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file uart_tx.vhd
-    Info (12022): Found design unit 1: uart_tx-behavioral File: D:/repos/uart_vhdl/uart_tx.vhd Line: 19
-    Info (12023): Found entity 1: uart_tx File: D:/repos/uart_vhdl/uart_tx.vhd Line: 5
+    Info (12022): Found design unit 1: uart_tx-behavioral File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 19
+    Info (12023): Found entity 1: uart_tx File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: D:/repos/uart_vhdl/DE10_LITE_Golden_Top.v Line: 29
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: D:/Repos/uart_vhdl/DE10_LITE_Golden_Top.v Line: 29
 Info (12127): Elaborating entity "uart_tx" for the top level hierarchy
-Info (13000): Registers with preset signals will power-up high File: D:/repos/uart_vhdl/uart_tx.vhd Line: 12
+Info (13000): Registers with preset signals will power-up high File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 12
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 43 logic cells
+    Info (21061): Implemented 38 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Sun Jun 16 17:34:32 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Sun Jun 16 18:03:40 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:04
 
 

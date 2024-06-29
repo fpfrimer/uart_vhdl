@@ -12,15 +12,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "tx_load",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
 					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "tx_load",
 					"strict" : false
 				},
 				{

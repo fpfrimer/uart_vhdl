@@ -61,7 +61,7 @@ nrst => \baud_proc:i[9].ACLR
 nrst => \baud_proc:i[10].ACLR
 nrst => \baud_proc:i[11].ACLR
 nrst => \baud_proc:i[12].ACLR
-tx << tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tx_data[0] => shift_register.DATAB
 tx_data[1] => shift_register.DATAB
 tx_data[2] => shift_register.DATAB
@@ -82,11 +82,11 @@ tx_load => shift_register.OUTPUTSELECT
 tx_load => shift_register.OUTPUTSELECT
 tx_load => tx_loaded.OUTPUTSELECT
 tx_load => tx_busy.OUTPUTSELECT
-tx_load => tx.OUTPUTSELECT
 tx_load => \tx_proc:i[3].ENA
 tx_load => \tx_proc:i[2].ENA
 tx_load => \tx_proc:i[1].ENA
 tx_load => \tx_proc:i[0].ENA
-tx_busy << tx_busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_load => tx~reg0.ENA
+tx_busy <= tx_busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
