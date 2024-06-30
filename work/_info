@@ -8,25 +8,25 @@ z2
 !i10f 100
 cModel Technology
 dD:/repos/video_aulas_vhdl/0044_vhdl_packages
-Euart_tx
-Z0 w1718557519
+Ecounter
+Z0 w1717073763
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dD:/repos/uart_vhdl
-Z5 8D:/repos/uart_vhdl/uart_tx.vhd
-Z6 FD:/repos/uart_vhdl/uart_tx.vhd
+Z5 8D:/repos/uart_vhdl/sevenSegPro.vhd
+Z6 FD:/repos/uart_vhdl/sevenSegPro.vhd
 l0
-L5
-VTHbO>[7HTHI39ahZdJJeF2
-!s100 :[Y<=]=4PIbni6g[4H>aO2
+L262
+ViAR^^e3fANTMbXOL5>A7l0
+!s100 021SPd5gDg9>7cWPOZLEB2
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1718557557
+Z8 !s110 1719765604
 !i10b 1
-Z9 !s108 1718557557.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx.vhd|
-Z11 !s107 D:/repos/uart_vhdl/uart_tx.vhd|
+Z9 !s108 1719765604.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/sevenSegPro.vhd|
+Z11 !s107 D:/repos/uart_vhdl/sevenSegPro.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -34,11 +34,11 @@ Abehavioral
 R1
 R2
 R3
-Z14 DEx4 work 7 uart_tx 0 22 THbO>[7HTHI39ahZdJJeF2
-l24
-L19
-VknnZ]z6Wj0a<E>GGglhL92
-!s100 5DzY`?Q:d?@EUJ5VBSnW22
+Z14 DEx4 work 7 counter 0 22 iAR^^e3fANTMbXOL5>A7l0
+l278
+L276
+Z15 V][ZjZAg<fbg]EcaK`nO_13
+Z16 !s100 SFNDGo00fVSMF^k]:YK;d1
 R7
 32
 R8
@@ -49,30 +49,242 @@ R11
 !i113 1
 R12
 R13
-Euart_tx_tb
-Z15 w1718557189
+Psevensegpro
+R1
+R2
+R3
+R0
+R4
+R5
+R6
+l0
+L32
+V[i058M;SbBOlh@Zh]OB``0
+!s100 4bZVO;d1FZMi^:IgUi^V?1
+R7
+32
+b1
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Bbody
+Z17 DPx4 work 11 sevensegpro 0 22 [i058M;SbBOlh@Zh]OB``0
+R1
+R2
+R3
+l0
+L158
+Z18 V_J;n[:zL`cAlog]V5CI^_3
+Z19 !s100 I@3:kZJ^6=>H9KkYB[N^f3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etop
+Z20 w1719764298
+R17
 R1
 R2
 R3
 R4
-Z16 8D:/repos/uart_vhdl/uart_tx_tb.vhd
-Z17 FD:/repos/uart_vhdl/uart_tx_tb.vhd
+Z21 8D:/repos/uart_vhdl/top.vhd
+Z22 FD:/repos/uart_vhdl/top.vhd
+l0
+L6
+V^odob_g0f;gMSHGobVkif0
+!s100 Z4Y8:3fT`>WY<Q5_FmhCP2
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/top.vhd|
+Z24 !s107 D:/repos/uart_vhdl/top.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z25 DEx4 work 7 uart_rx 0 22 57E<ECXh@TOa:R[WlS2BZ2
+Z26 DEx4 work 7 uart_tx 0 22 THbO>[7HTHI39ahZdJJeF2
+R17
+R1
+R2
+R3
+DEx4 work 3 top 0 22 ^odob_g0f;gMSHGobVkif0
+l30
+L18
+V;_2PzH00>[[X9VL@YG7lh0
+!s100 PPlBZAoiS=6[hOLEA>dkK1
+R7
+32
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Euart_rx
+Z27 w1719765584
+R1
+R2
+R3
+R4
+Z28 8D:/repos/uart_vhdl/uart_rx.vhd
+Z29 FD:/repos/uart_vhdl/uart_rx.vhd
+l0
+L5
+V57E<ECXh@TOa:R[WlS2BZ2
+!s100 lD;H8oY1f:14UUQob[oOi3
+R7
+32
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_rx.vhd|
+Z31 !s107 D:/repos/uart_vhdl/uart_rx.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R25
+l26
+L19
+V1ZMCT18294^b3;f`=8BH;2
+!s100 dg>gobCY_PYXz@BDl3IOi3
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Euart_rx_tb
+Z32 w1719764976
+R1
+R2
+R3
+R4
+Z33 8D:/repos/uart_vhdl/uart_rx_tb.vhd
+Z34 FD:/repos/uart_vhdl/uart_rx_tb.vhd
+l0
+L5
+V[m^E2<2LPFfTYLMAYA1]M0
+!s100 d6Y;NDC=`YVDI2Uj91MPU0
+R7
+32
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_rx_tb.vhd|
+Z36 !s107 D:/repos/uart_vhdl/uart_rx_tb.vhd|
+!i113 1
+R12
+R13
+Asimulation
+R25
+R26
+R1
+R2
+R3
+DEx4 work 10 uart_rx_tb 0 22 [m^E2<2LPFfTYLMAYA1]M0
+l19
+L9
+VR`9e@V2ZHJXK<@nUTi9_:1
+!s100 aTz]G8Z_U[oYY@21eeGBe2
+R7
+32
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Euart_tx
+Z37 w1719761160
+R1
+R2
+R3
+R4
+Z38 8D:/repos/uart_vhdl/uart_tx.vhd
+Z39 FD:/repos/uart_vhdl/uart_tx.vhd
+l0
+L5
+VTHbO>[7HTHI39ahZdJJeF2
+!s100 :[Y<=]=4PIbni6g[4H>aO2
+R7
+32
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx.vhd|
+Z41 !s107 D:/repos/uart_vhdl/uart_tx.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R26
+l26
+L19
+Vz[9naczKoVh;Vc_7jWNE73
+!s100 X6mLnBfogE=V46OA;4V]30
+R7
+32
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Euart_tx_tb
+Z42 w1719680183
+R1
+R2
+R3
+R4
+Z43 8D:/repos/uart_vhdl/uart_tx_tb.vhd
+Z44 FD:/repos/uart_vhdl/uart_tx_tb.vhd
 l0
 L5
 Vi:ASNjH_8CLcz6ln9V:Y?2
 !s100 XlVRC^TZU8CiSflZ:RlzW2
 R7
 32
-Z18 !s110 1718557193
+R8
 !i10b 1
-Z19 !s108 1718557193.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx_tb.vhd|
-Z21 !s107 D:/repos/uart_vhdl/uart_tx_tb.vhd|
+R9
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx_tb.vhd|
+Z46 !s107 D:/repos/uart_vhdl/uart_tx_tb.vhd|
 !i113 1
 R12
 R13
 Asimulation
-R14
+R26
 R1
 R2
 R3
@@ -83,11 +295,11 @@ VG_m`RF_e@[72RDi=i0Ljh3
 !s100 N[Z6PAdKm=Tk=aYSX5aYH1
 R7
 32
-R18
+R8
 !i10b 1
-R19
-R20
-R21
+R9
+R45
+R46
 !i113 1
 R12
 R13

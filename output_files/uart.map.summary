@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Jun 16 18:03:40 2024
+Analysis & Synthesis Status : Successful - Sun Jun 30 13:08:32 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : uart
-Top-level Entity Name : uart_tx
+Top-level Entity Name : top
 Family : MAX 10
-Total logic elements : 38
-    Total combinational functions : 38
-    Dedicated logic registers : 30
-Total registers : 30
-Total pins : 13
+Total logic elements : 101
+    Total combinational functions : 92
+    Dedicated logic registers : 67
+Total registers : 67
+Total pins : 53
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

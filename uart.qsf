@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C6GES
-set_global_assignment -name TOP_LEVEL_ENTITY uart_tx
+set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:45:13 JUNE 17,2016"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -51,6 +51,22 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
+set_location_assignment PIN_P11 -to clk
+set_location_assignment PIN_B8 -to nrst
+set_location_assignment PIN_AB5 -to tx
+set_location_assignment PIN_A8 -to tx_busy
+set_location_assignment PIN_A14 -to tx_data[7]
+set_location_assignment PIN_A13 -to tx_data[6]
+set_location_assignment PIN_B12 -to tx_data[5]
+set_location_assignment PIN_A12 -to tx_data[4]
+set_location_assignment PIN_C12 -to tx_data[3]
+set_location_assignment PIN_D12 -to tx_data[2]
+set_location_assignment PIN_C11 -to tx_data[1]
+set_location_assignment PIN_C10 -to tx_data[0]
+set_location_assignment PIN_A7 -to tx_load
+set_global_assignment -name VHDL_FILE uart_rx.vhd
+set_global_assignment -name VHDL_FILE top.vhd
+set_global_assignment -name VHDL_FILE sevenSegPro.vhd
 set_global_assignment -name VHDL_FILE uart_tx.vhd
 set_global_assignment -name VERILOG_FILE DE10_LITE_Golden_Top.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
@@ -241,17 +257,4 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
-set_location_assignment PIN_P11 -to clk
-set_location_assignment PIN_B8 -to nrst
-set_location_assignment PIN_AB5 -to tx
-set_location_assignment PIN_A8 -to tx_busy
-set_location_assignment PIN_A14 -to tx_data[7]
-set_location_assignment PIN_A13 -to tx_data[6]
-set_location_assignment PIN_B12 -to tx_data[5]
-set_location_assignment PIN_A12 -to tx_data[4]
-set_location_assignment PIN_C12 -to tx_data[3]
-set_location_assignment PIN_D12 -to tx_data[2]
-set_location_assignment PIN_C11 -to tx_data[1]
-set_location_assignment PIN_C10 -to tx_data[0]
-set_location_assignment PIN_A7 -to tx_load
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

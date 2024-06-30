@@ -1,13 +1,4 @@
-D:/repos/uart_vhdl/uart_tx.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/uart_tx.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity uart_tx
--- Compiling architecture behavioral of uart_tx
-
-} {} {}} D:/repos/uart_vhdl/uart_tx_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/uart_tx_tb.vhd
+D:/repos/uart_vhdl/uart_tx_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/uart_tx_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -16,5 +7,37 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity uart_tx_tb
 -- Compiling architecture simulation of uart_tx_tb
 -- Loading entity uart_tx
+
+} {} {}} D:/repos/uart_vhdl/uart_rx.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/uart_rx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity uart_rx
+-- Compiling architecture behavioral of uart_rx
+
+} {} {}} D:/repos/uart_vhdl/sevenSegPro.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/sevenSegPro.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package sevenSegPro
+-- Compiling package body sevenSegPro
+-- Loading package sevenSegPro
+-- Compiling entity counter
+-- Compiling architecture behavioral of counter
+
+} {} {}} D:/repos/uart_vhdl/uart_rx_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/uart_vhdl/uart_rx_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity uart_rx_tb
+-- Compiling architecture simulation of uart_rx_tb
+-- Loading entity uart_tx
+-- Loading entity uart_rx
 
 } {} {}}
