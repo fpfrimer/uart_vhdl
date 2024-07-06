@@ -8,6 +8,7 @@ z2
 !i10f 100
 cModel Technology
 dD:/repos/video_aulas_vhdl/0044_vhdl_packages
+<<<<<<< Updated upstream
 Ecounter
 Z0 w1717073763
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
@@ -16,17 +17,35 @@ Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dD:/repos/uart_vhdl
 Z5 8D:/repos/uart_vhdl/sevenSegPro.vhd
 Z6 FD:/repos/uart_vhdl/sevenSegPro.vhd
+=======
+Euart_tx
+Z0 w1719181946
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/Repos/uart_vhdl
+Z5 8D:/Repos/uart_vhdl/uart_tx.vhd
+Z6 FD:/Repos/uart_vhdl/uart_tx.vhd
+>>>>>>> Stashed changes
 l0
 L262
 ViAR^^e3fANTMbXOL5>A7l0
 !s100 021SPd5gDg9>7cWPOZLEB2
 Z7 OV;C;10.5b;63
 32
+<<<<<<< Updated upstream
 Z8 !s110 1719765604
 !i10b 1
 Z9 !s108 1719765604.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/sevenSegPro.vhd|
 Z11 !s107 D:/repos/uart_vhdl/sevenSegPro.vhd|
+=======
+Z8 !s110 1719687927
+!i10b 1
+Z9 !s108 1719687927.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repos/uart_vhdl/uart_tx.vhd|
+Z11 !s107 D:/Repos/uart_vhdl/uart_tx.vhd|
+>>>>>>> Stashed changes
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -34,11 +53,19 @@ Abehavioral
 R1
 R2
 R3
+<<<<<<< Updated upstream
 Z14 DEx4 work 7 counter 0 22 iAR^^e3fANTMbXOL5>A7l0
 l278
 L276
 Z15 V][ZjZAg<fbg]EcaK`nO_13
 Z16 !s100 SFNDGo00fVSMF^k]:YK;d1
+=======
+Z14 DEx4 work 7 uart_tx 0 22 THbO>[7HTHI39ahZdJJeF2
+l24
+L19
+VVh]64Y@GN@lgLONJg>XCR0
+!s100 L6RG;_9`jn^:mi4hS_>oW1
+>>>>>>> Stashed changes
 R7
 32
 R8
@@ -49,6 +76,7 @@ R11
 !i113 1
 R12
 R13
+<<<<<<< Updated upstream
 Psevensegpro
 R1
 R2
@@ -94,10 +122,15 @@ R13
 Etop
 Z20 w1719764298
 R17
+=======
+Euart_tx_tb
+Z15 w1719687909
+>>>>>>> Stashed changes
 R1
 R2
 R3
 R4
+<<<<<<< Updated upstream
 Z21 8D:/repos/uart_vhdl/top.vhd
 Z22 FD:/repos/uart_vhdl/top.vhd
 l0
@@ -269,6 +302,10 @@ R3
 R4
 Z43 8D:/repos/uart_vhdl/uart_tx_tb.vhd
 Z44 FD:/repos/uart_vhdl/uart_tx_tb.vhd
+=======
+Z16 8D:/Repos/uart_vhdl/uart_tx_tb.vhd
+Z17 FD:/Repos/uart_vhdl/uart_tx_tb.vhd
+>>>>>>> Stashed changes
 l0
 L5
 Vi:ASNjH_8CLcz6ln9V:Y?2
@@ -278,8 +315,13 @@ R7
 R8
 !i10b 1
 R9
+<<<<<<< Updated upstream
 Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/repos/uart_vhdl/uart_tx_tb.vhd|
 Z46 !s107 D:/repos/uart_vhdl/uart_tx_tb.vhd|
+=======
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repos/uart_vhdl/uart_tx_tb.vhd|
+Z19 !s107 D:/Repos/uart_vhdl/uart_tx_tb.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -288,18 +330,23 @@ R26
 R1
 R2
 R3
-DEx4 work 10 uart_tx_tb 0 22 i:ASNjH_8CLcz6ln9V:Y?2
+Z20 DEx4 work 10 uart_tx_tb 0 22 i:ASNjH_8CLcz6ln9V:Y?2
 l16
 L9
-VG_m`RF_e@[72RDi=i0Ljh3
-!s100 N[Z6PAdKm=Tk=aYSX5aYH1
+VjC7IUXQ7J7JLlnEQ?iZ^K0
+!s100 4`;IIYQIEPI<<dAhk]h8>2
 R7
 32
 R8
 !i10b 1
 R9
+<<<<<<< Updated upstream
 R45
 R46
+=======
+R18
+R19
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
