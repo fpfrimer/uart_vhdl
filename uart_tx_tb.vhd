@@ -10,7 +10,6 @@ architecture simulation of uart_tx_tb is
     signal clk, nrst   :   std_logic := '0';
     signal tx          :   std_logic;
     signal tx_data     :   std_logic_vector(7 downto 0);
-    signal tx_load     :   std_logic;
     signal tx_load     :   std_logic := '1';
     signal tx_busy     :   std_logic;
     
@@ -28,11 +27,9 @@ begin
             tx_data <= x"48";
             wait for 50 ns;
 
-            tx_load <= '1';
             tx_load <= '0';
             wait for 50 ns;
 
-            tx_load <= '0';
             tx_load <= '1';
             wait;
 
