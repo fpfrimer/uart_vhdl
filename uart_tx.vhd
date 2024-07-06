@@ -69,7 +69,7 @@ begin
             if i = max_cycles - 1 then
                 i := 0;
                 tx_transf <= True;
-            elsif tx_loaded then
+            else
                 i := i + 1;
                 tx_transf <= False;
             end if;

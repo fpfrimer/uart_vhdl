@@ -44,11 +44,11 @@ begin
     hex <= display(rx_data, 2, 16, anode);
 
     utx :   entity work.uart_tx
-        generic map (10000000, 50e6)
+        generic map (115200, 50e6)
         port map(clk, nrst, tx, tx_data, tx_load, tx_busy);
 
     urx :   entity work.uart_rx
-        generic map (10000000, 50e6)
-        port map(clk, nrst, rx, rx_data, rx_rdy, rx_busy);
+        generic map (115200, 50e6)
+        port map(clk, nrst, rx, rx_data, rx_rdy, rx_busy, '1');
 
 end architecture;

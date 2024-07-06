@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Sun Jun 30 13:47:40 2024
+Sat Jul 06 16:13:47 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,9 +19,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: uart_tx:utx
  13. Parameter Settings for User Entity Instance: uart_rx:urx
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "uart_rx:urx"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,15 +48,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 30 13:47:40 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 06 16:13:47 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 70                                          ;
-;     Total combinational functions  ; 69                                          ;
-;     Dedicated logic registers      ; 47                                          ;
-; Total registers                    ; 47                                          ;
+; Total logic elements               ; 96                                          ;
+;     Total combinational functions  ; 94                                          ;
+;     Dedicated logic registers      ; 59                                          ;
+; Total registers                    ; 59                                          ;
 ; Total pins                         ; 53                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -157,7 +158,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
+; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -174,10 +175,10 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path       ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------+---------+
-; uart_tx.vhd                      ; yes             ; User VHDL File  ; D:/repos/uart_vhdl/uart_tx.vhd     ;         ;
-; uart_rx.vhd                      ; yes             ; User VHDL File  ; D:/repos/uart_vhdl/uart_rx.vhd     ;         ;
-; top.vhd                          ; yes             ; User VHDL File  ; D:/repos/uart_vhdl/top.vhd         ;         ;
-; sevenSegPro.vhd                  ; yes             ; User VHDL File  ; D:/repos/uart_vhdl/sevenSegPro.vhd ;         ;
+; uart_tx.vhd                      ; yes             ; User VHDL File  ; D:/Repos/uart_vhdl/uart_tx.vhd     ;         ;
+; uart_rx.vhd                      ; yes             ; User VHDL File  ; D:/Repos/uart_vhdl/uart_rx.vhd     ;         ;
+; top.vhd                          ; yes             ; User VHDL File  ; D:/Repos/uart_vhdl/top.vhd         ;         ;
+; sevenSegPro.vhd                  ; yes             ; User VHDL File  ; D:/Repos/uart_vhdl/sevenSegPro.vhd ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------+---------+
 
 
@@ -186,20 +187,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 70                  ;
+; Estimated Total logic elements              ; 96                  ;
 ;                                             ;                     ;
-; Total combinational functions               ; 69                  ;
+; Total combinational functions               ; 94                  ;
 ; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 36                  ;
-;     -- 3 input functions                    ; 12                  ;
-;     -- <=2 input functions                  ; 21                  ;
+;     -- 4 input functions                    ; 39                  ;
+;     -- 3 input functions                    ; 15                  ;
+;     -- <=2 input functions                  ; 40                  ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 69                  ;
-;     -- arithmetic mode                      ; 0                   ;
+;     -- normal mode                          ; 78                  ;
+;     -- arithmetic mode                      ; 16                  ;
 ;                                             ;                     ;
-; Total registers                             ; 47                  ;
-;     -- Dedicated logic registers            ; 47                  ;
+; Total registers                             ; 59                  ;
+;     -- Dedicated logic registers            ; 59                  ;
 ;     -- I/O registers                        ; 0                   ;
 ;                                             ;                     ;
 ; I/O pins                                    ; 53                  ;
@@ -207,9 +208,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
-; Maximum fan-out                             ; 47                  ;
-; Total fan-out                               ; 466                 ;
-; Average fan-out                             ; 1.96                ;
+; Maximum fan-out                             ; 59                  ;
+; Total fan-out                               ; 583                 ;
+; Average fan-out                             ; 2.12                ;
 +---------------------------------------------+---------------------+
 
 
@@ -218,9 +219,9 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |top                       ; 69 (14)             ; 47 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |top                ; top         ; work         ;
-;    |uart_rx:urx|           ; 31 (31)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|uart_rx:urx    ; uart_rx     ; work         ;
-;    |uart_tx:utx|           ; 24 (24)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|uart_tx:utx    ; uart_tx     ; work         ;
+; |top                       ; 94 (15)             ; 59 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |top                ; top         ; work         ;
+;    |uart_rx:urx|           ; 42 (42)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|uart_rx:urx    ; uart_rx     ; work         ;
+;    |uart_tx:utx|           ; 37 (37)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|uart_tx:utx    ; uart_tx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -241,12 +242,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 47    ;
+; Total registers                              ; 59    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 39    ;
+; Number of registers using Synchronous Load   ; 9     ;
+; Number of registers using Asynchronous Clear ; 59    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 33    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -284,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|uart_rx:urx|\baud_proc:i[2]   ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|uart_rx:urx|\baud_proc:i[4]   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|uart_tx:utx|shift_register[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
@@ -294,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+----------+------------------------------+
 ; Parameter Name ; Value    ; Type                         ;
 +----------------+----------+------------------------------+
-; baud           ; 10000000 ; Signed Integer               ;
+; baud           ; 115200   ; Signed Integer               ;
 ; input_freq     ; 50000000 ; Signed Integer               ;
 +----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -305,10 +306,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------+------------------------------+
 ; Parameter Name ; Value    ; Type                         ;
 +----------------+----------+------------------------------+
-; baud           ; 10000000 ; Signed Integer               ;
+; baud           ; 115200   ; Signed Integer               ;
 ; input_freq     ; 50000000 ; Signed Integer               ;
 +----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "uart_rx:urx"    ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; clr_flag ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -317,21 +327,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 53                          ;
-; cycloneiii_ff         ; 47                          ;
-;     CLR               ; 15                          ;
-;     ENA               ; 8                           ;
-;     ENA CLR           ; 24                          ;
+; cycloneiii_ff         ; 59                          ;
+;     CLR               ; 17                          ;
+;     CLR SLD           ; 9                           ;
+;     ENA CLR           ; 33                          ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 72                          ;
-;     normal            ; 72                          ;
+; cycloneiii_lcell_comb ; 96                          ;
+;     arith             ; 16                          ;
+;         2 data inputs ; 16                          ;
+;     normal            ; 80                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
+;         1 data inputs ; 12                          ;
 ;         2 data inputs ; 13                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 36                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 39                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.20                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -350,77 +362,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 30 13:47:30 2024
+    Info: Processing started: Sat Jul 06 16:13:40 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file uart_tx.vhd
-    Info (12022): Found design unit 1: uart_tx-behavioral File: D:/repos/uart_vhdl/uart_tx.vhd Line: 19
-    Info (12023): Found entity 1: uart_tx File: D:/repos/uart_vhdl/uart_tx.vhd Line: 5
+    Info (12022): Found design unit 1: uart_tx-behavioral File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 19
+    Info (12023): Found entity 1: uart_tx File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file uart_rx.vhd
-    Info (12022): Found design unit 1: uart_rx-behavioral File: D:/repos/uart_vhdl/uart_rx.vhd Line: 19
-    Info (12023): Found entity 1: uart_rx File: D:/repos/uart_vhdl/uart_rx.vhd Line: 5
+    Info (12022): Found design unit 1: uart_rx-behavioral File: D:/Repos/uart_vhdl/uart_rx.vhd Line: 20
+    Info (12023): Found entity 1: uart_rx File: D:/Repos/uart_vhdl/uart_rx.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file top.vhd
-    Info (12022): Found design unit 1: top-behavioral File: D:/repos/uart_vhdl/top.vhd Line: 18
-    Info (12023): Found entity 1: top File: D:/repos/uart_vhdl/top.vhd Line: 6
+    Info (12022): Found design unit 1: top-behavioral File: D:/Repos/uart_vhdl/top.vhd Line: 18
+    Info (12023): Found entity 1: top File: D:/Repos/uart_vhdl/top.vhd Line: 6
 Info (12021): Found 4 design units, including 1 entities, in source file sevensegpro.vhd
-    Info (12022): Found design unit 1: sevenSegPro File: D:/repos/uart_vhdl/sevenSegPro.vhd Line: 32
-    Info (12022): Found design unit 2: sevenSegPro-body File: D:/repos/uart_vhdl/sevenSegPro.vhd Line: 158
-    Info (12022): Found design unit 3: counter-behavioral File: D:/repos/uart_vhdl/sevenSegPro.vhd Line: 276
-    Info (12023): Found entity 1: counter File: D:/repos/uart_vhdl/sevenSegPro.vhd Line: 262
+    Info (12022): Found design unit 1: sevenSegPro File: D:/Repos/uart_vhdl/sevenSegPro.vhd Line: 32
+    Info (12022): Found design unit 2: sevenSegPro-body File: D:/Repos/uart_vhdl/sevenSegPro.vhd Line: 158
+    Info (12022): Found design unit 3: counter-behavioral File: D:/Repos/uart_vhdl/sevenSegPro.vhd Line: 276
+    Info (12023): Found entity 1: counter File: D:/Repos/uart_vhdl/sevenSegPro.vhd Line: 262
 Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: D:/repos/uart_vhdl/DE10_LITE_Golden_Top.v Line: 29
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: D:/Repos/uart_vhdl/DE10_LITE_Golden_Top.v Line: 29
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "LEDR[9..3]" at top.vhd(10) File: D:/repos/uart_vhdl/top.vhd Line: 10
-Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:utx" File: D:/repos/uart_vhdl/top.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at uart_tx.vhd(65): signal "tx_loaded" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/repos/uart_vhdl/uart_tx.vhd Line: 65
-Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:urx" File: D:/repos/uart_vhdl/top.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at uart_rx.vhd(66): signal "rx_started" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/repos/uart_vhdl/uart_rx.vhd Line: 66
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..3]" at top.vhd(10) File: D:/Repos/uart_vhdl/top.vhd Line: 10
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:utx" File: D:/Repos/uart_vhdl/top.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at uart_tx.vhd(65): signal "tx_loaded" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Repos/uart_vhdl/uart_tx.vhd Line: 65
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:urx" File: D:/Repos/uart_vhdl/top.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at uart_rx.vhd(40): signal "clr_flag" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Repos/uart_vhdl/uart_rx.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at uart_rx.vhd(70): signal "rx_started" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Repos/uart_vhdl/uart_rx.vhd Line: 70
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "ARDUINO_IO[1]" and its non-tri-state driver. File: D:/repos/uart_vhdl/top.vhd Line: 14
+    Warning (13035): Inserted always-enabled tri-state buffer between "ARDUINO_IO[1]" and its non-tri-state driver. File: D:/Repos/uart_vhdl/top.vhd Line: 14
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: D:/repos/uart_vhdl/top.vhd Line: 14
-Info (13000): Registers with preset signals will power-up high File: D:/repos/uart_vhdl/uart_rx.vhd Line: 32
+    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: D:/Repos/uart_vhdl/top.vhd Line: 14
+Info (13000): Registers with preset signals will power-up high File: D:/Repos/uart_vhdl/uart_rx.vhd Line: 33
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "ARDUINO_IO[1]~synth" File: D:/repos/uart_vhdl/top.vhd Line: 14
+    Warning (13010): Node "ARDUINO_IO[1]~synth" File: D:/Repos/uart_vhdl/top.vhd Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/Repos/uart_vhdl/top.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: D:/repos/uart_vhdl/top.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[9]" File: D:/repos/uart_vhdl/top.vhd Line: 9
-Info (21057): Implemented 123 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[8]" File: D:/Repos/uart_vhdl/top.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[9]" File: D:/Repos/uart_vhdl/top.vhd Line: 9
+Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 24 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 70 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Sun Jun 30 13:47:40 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:10
+    Info (21061): Implemented 96 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Sat Jul 06 16:13:47 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 

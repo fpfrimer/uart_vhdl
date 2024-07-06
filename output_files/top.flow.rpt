@@ -1,5 +1,5 @@
 Flow report for top
-Sun Jun 30 13:47:56 2024
+Sat Jul 06 16:14:00 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jun 30 13:47:53 2024       ;
+; Flow Status                        ; Successful - Sat Jul 06 16:13:58 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 70 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 70 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 47 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 47                                          ;
+; Total logic elements               ; 95 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 95 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 59 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 59                                          ;
 ; Total pins                         ; 53 / 360 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/30/2024 13:47:31 ;
+; Start date & time ; 07/06/2024 16:13:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top                 ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 123598314676802.171976605041620        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198112243877903.172029322105512        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4856 MB             ; 00:00:10                           ;
-; Fitter               ; 00:00:08     ; 1.1                     ; 6607 MB             ; 00:00:08                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4684 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4949 MB             ; 00:00:03                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4858 MB             ; 00:00:05                           ;
+; Fitter               ; 00:00:07     ; 1.1                     ; 6607 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4683 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4966 MB             ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; acer             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; acer             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; acer             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; acer             ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; ryzen            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; ryzen            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; ryzen            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; ryzen            ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

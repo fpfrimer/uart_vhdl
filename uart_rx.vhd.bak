@@ -12,8 +12,7 @@ entity uart_rx is
         rx          :   in      std_logic;  -- Pino RX
         rx_data     :   out     std_logic_vector(7 downto 0);   -- Dado recebido
         rx_rdy      :   out     std_logic;  -- Flag de recepção 
-        rx_busy     :   out     std_logic;  -- Indica que um dado está chegando
-		clr_flag    :   in 	    std_logic
+        rx_busy     :   out     std_logic   -- Indica que um dado está chegando
     );
 end entity uart_rx;
 
@@ -32,13 +31,10 @@ begin
     begin
         if nrst = '0' then
             shift_register <= (others => '1');
-				rx_data <= (others => '0');
             rx_started <= False;            
             rx_busy <= '0';
             rx_rdy <= '0';
             i := 0;
-		elsif clr_flag = '0' then
-			rx_rdy <= '0';
         elsif rising_edge(clk) then
             if rx_started then
                 if rx_transf then
@@ -76,7 +72,7 @@ begin
             elsif i = max_cycles/2 - 1 then
                 rx_transf <= True;
                 i := max_cycles/2;
-            else
+            elsif rx_started then
                 i := i + 1;
                 rx_transf <= False;
             end if;
